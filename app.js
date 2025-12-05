@@ -10,7 +10,7 @@ const taskRouter= require('./routes/taskRoutes');
 // create an express app
 const app=express();
 app.use(cors({
-   origin: ["http://localhost:5173", "https://todofrnt.netlify.app/"],
+   origin: ["http://localhost:5173", "https://todofrnt.netlify.app"],
    credentials: true
 }));
 
