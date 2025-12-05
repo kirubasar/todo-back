@@ -47,8 +47,8 @@ const userController={
             // set a cookie with the token
             res.cookie('token', token,{
                 httpOnly:true,
-                sameSite: 'Lax',
-                secure: false,
+                sameSite: 'None',
+                secure: true,
                 expires: new Date(new Date().getTime() + 24 *60*60*1000)
             })
             // return the user
